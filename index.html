@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Euro Crown Logistics | Freight, Fleet & Platform Operations</title>
+  <meta name="description" content="Euro Crown Logistics provides freight forwarding, customs clearance, warehousing, and fleet & delivery platform operations." />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="wrap row between">
+      <div class="row gap wrapline">
+        <span class="pill">📞 +880 1XXX-XXXXXX</span>
+        <span class="pill">✉️ info@eurocrownlogistics.com</span>
+        <span class="pill">⏱️ 24/7 Support</span>
+      </div>
+      <div class="row gap">
+        <a class="pill pillLink" href="#contact">Contact</a>
+        <a class="pill pillLink" href="#quote">Get a Quote</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap row between">
+      <a class="brand" href="#home" aria-label="Euro Crown Logistics Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brandText">Euro Crown Logistics</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#solutions">Solutions</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#industries">Industries</a>
+        <a href="#insights">Insights</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="row gap">
+        <a class="btn ghost" href="#solutions">Explore</a>
+        <a class="btn primary" href="#quote">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero (Zebra-style) -->
+  <section class="hero" id="home">
+    <div class="wrap heroGrid">
+      <div>
+        <h1>Drive visibility. Empower operations. Deliver flawlessly.</h1>
+        <p class="lead">
+          One partner for <strong>Freight & Logistics</strong> and <strong>Fleet & Delivery Platform Operations</strong> —
+          built for speed, compliance, and dependable execution.
+        </p>
+
+        <div class="row gap wrapline heroActions">
+          <a class="btn primary" href="#quote">Request a Quote</a>
+          <a class="btn dark" href="#solutions">View Solutions</a>
+          <a class="btn ghostOnDark" href="#contact">Talk to Us</a>
+        </div>
+
+        <div class="trust row gap wrapline">
+          <span class="badge">✅ Customs & compliance support</span>
+          <span class="badge">✅ Fleet onboarding & ops</span>
+          <span class="badge">✅ Warehousing & last-mile options</span>
+        </div>
+      </div>
+
+      <aside class="heroPanel" aria-label="Quick actions">
+        <div class="panelTitle">Quick request</div>
+
+        <div class="tabs" role="tablist" aria-label="Choose request type">
+          <button class="tab isActive" role="tab" aria-selected="true" aria-controls="tab-quote" id="tabbtn-quote">Quote</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-apply" id="tabbtn-apply">Apply</button>
+        </div>
+
+        <!-- Quote -->
+        <div id="tab-quote" class="tabPanel isActive" role="tabpanel" aria-labelledby="tabbtn-quote">
+          <label class="label" for="qtype">Service</label>
+          <select id="qtype" class="input">
+            <option value="freight">Freight & Logistics</option>
+            <option value="fleet">Fleet & Platform Operations</option>
+          </select>
+
+          <label class="label" for="qemail">Email</label>
+          <input id="qemail" class="input" type="email" placeholder="name@company.com" />
+
+          <label class="label" for="qmsg">Request details</label>
+          <textarea id="qmsg" class="input" rows="4" placeholder="Origin → destination, cargo/fleet need, timeline..."></textarea>
+
+          <a class="btn primary full" href="#quote">Send Request</a>
+          <p class="hint">Connect this to your form handler (Formspree / backend) when ready.</p>
+        </div>
+
+        <!-- Apply -->
+        <div id="tab-apply" class="tabPanel" role="tabpanel" aria-labelledby="tabbtn-apply">
+          <label class="label" for="aname">Full name</label>
+          <input id="aname" class="input" type="text" placeholder="Your name" />
+
+          <label class="label" for="aphone">Phone / WhatsApp</label>
+          <input id="aphone" class="input" type="text" placeholder="+880..." />
+
+          <label class="label" for="arole">Interested in</label>
+          <select id="arole" class="input">
+            <option>Rider / Driver</option>
+            <option>Fleet Coordinator</option>
+            <option>Operations Support</option>
+          </select>
+
+          <a class="btn primary full" href="#contact">Submit Application</a>
+          <p class="hint">If you already have a Rider application page, link this button there.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Solutions (Zebra-like tiles) -->
+  <section id="solutions">
+    <div class="wrap">
+      <div class="sectionHead">
+        <div>
+          <h2>Solutions built around your operations</h2>
+          <p>Choose from two verticals — freight movement and platform fleet operations — with a consistent, compliant execution model.</p>
+        </div>
+
+        <div class="segmented" aria-label="Solution filter">
+          <button class="seg isActive" data-filter="all">All</button>
+          <button class="seg" data-filter="freight">Freight</button>
+          <button class="seg" data-filter="fleet">Fleet</button>
+        </div>
+      </div>
+
+      <div class="grid cards" id="solutionGrid">
+        <!-- Freight -->
+        <article class="card" data-cat="freight">
+          <div class="cardTop">
+            <div class="icon">✈️</div>
+            <h3>Air Freight</h3>
+          </div>
+          <p>Fast, reliable shipping for time-sensitive cargo with end-to-end documentation support.</p>
+          <a class="link" href="#quote">Explore →</a>
+        </article>
+
+        <article class="card" data-cat="freight">
+          <div class="cardTop">
+            <div class="icon">🚢</div>
+            <h3>Sea Freight</h3>
+          </div>
+          <p>FCL/LCL options with planning, paperwork, and predictable delivery coordination.</p>
+          <a class="link" href="#quote">Explore →</a>
+        </article>
+
+        <article class="card" data-cat="freight">
+          <div class="cardTop">
+            <div class="icon">🚚</div>
+            <h3>Road Transport</h3>
+          </div>
+          <p>Domestic and cross-border moves with route planning and secure handling.</p>
+          <a class="link" href="#quote">Explore →</a>
+        </article>
+
+        <article class="card" data-cat="freight">
+          <div class="cardTop">
+            <div class="icon">🧾</div>
+            <h3>Customs Clearance</h3>
+          </div>
+          <p>Compliance, import/export documentation, and smoother processing to reduce delays.</p>
+          <a class="link" href="#quote">Explore →</a>
+        </article>
+
+        <article class="card" data-cat="freight">
+          <div class="cardTop">
+            <div class="icon">🏭</div>
+            <h3>Warehousing</h3>
+          </div>
+          <p>Storage, inventory handling, and value-added services that improve throughput.</p>
+          <a class="link" href="#quote">Explore →</a>
+        </article>
+
+        <article class="card" data-cat="freight">
+          <div class="cardTop">
+            <div class="icon">📦</div>
+            <h3>Door-to-Door</h3>
+          </div>
+          <p>Pickup-to-delivery coordination with last-mile options and proof of delivery.</p>
+          <a class="link" href="#quote">Explore →</a>
+        </article>
+
+        <!-- Fleet / Platform Ops -->
+        <article class="card" data-cat="fleet">
+          <div class="cardTop">
+            <div class="icon">🧑‍✈️</div>
+            <h3>Driver & Rider Onboarding</h3>
+          </div>
+          <p>Recruitment, documentation, training, and activation workflows for platform operations.</p>
+          <a class="link" href="#contact">Explore →</a>
+        </article>
+
+        <article class="card" data-cat="fleet">
+          <div class="cardTop">
+            <div class="icon">🗺️</div>
+            <h3>Dispatch & Operations Support</h3>
+          </div>
+          <p>Daily ops coordination, scheduling support, and performance visibility.</p>
+          <a class="link" href="#contact">Explore →</a>
+        </article>
+
+        <article class="card" data-cat="fleet">
+          <div class="cardTop">
+            <div class="icon">🛵</div>
+            <h3>Fleet Readiness</h3>
+          </div>
+          <p>Vehicle compliance, maintenance coordination, and readiness checks to reduce downtime.</p>
+          <a class="link" href="#contact">Explore →</a>
+        </article>
+
+        <article class="card" data-cat="fleet">
+          <div class="cardTop">
+            <div class="icon">📈</div>
+            <h3>Performance Management</h3>
+          </div>
+          <p>KPI tracking, coaching loops, and issue resolution for consistent service levels.</p>
+          <a class="link" href="#contact">Explore →</a>
+        </article>
+
+        <article class="card" data-cat="fleet">
+          <div class="cardTop">
+            <div class="icon">🛡️</div>
+            <h3>Safety & Compliance</h3>
+          </div>
+          <p>Policies, documentation support, and operational controls to maintain quality and safety.</p>
+          <a class="link" href="#contact">Explore →</a>
+        </article>
+
+        <article class="card" data-cat="fleet">
+          <div class="cardTop">
+            <div class="icon">🤝</div>
+            <h3>Platform Partnership</h3>
+          </div>
+          <p>Structured collaboration model for scaling fleets and sustaining quality.</p>
+          <a class="link" href="#contact">Explore →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities / Stats -->
+  <section class="soft" id="capabilities">
+    <div class="wrap">
+      <div class="sectionHead">
+        <div>
+          <h2>Operational capabilities</h2>
+          <p>Enterprise-grade structure that supports both freight movements and fleet/platform delivery operations.</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><strong>24/7</strong><span>Support readiness</span></div>
+        <div class="stat"><strong>—</strong><span>On-time delivery % (add yours)</span></div>
+        <div class="stat"><strong>—</strong><span>Monthly shipments (add yours)</span></div>
+        <div class="stat"><strong>—</strong><span>Active riders/drivers (add yours)</span></div>
+      </div>
+
+      <div class="callout">
+        <div>
+          <h3>Two business lines, one standard of execution</h3>
+          <p>We apply the same discipline — compliance, documentation, performance visibility, and customer communication — across both verticals.</p>
+        </div>
+        <a class="btn primary" href="#quote">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries -->
+  <section id="industries">
+    <div class="wrap">
+      <div class="sectionHead">
+        <div>
+          <h2>Industries we support</h2>
+          <p>Freight customers and platform operations — tailored processes, consistent outcomes.</p>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <div class="card">
+          <h3>Retail & E-commerce</h3>
+          <p>Warehousing + fulfillment coordination + last-mile options for faster delivery.</p>
+        </div>
+        <div class="card">
+          <h3>Garments & Manufacturing</h3>
+          <p>Time-sensitive export/import workflows with documentation and compliance support.</p>
+        </div>
+        <div class="card">
+          <h3>Pharma & Healthcare</h3>
+          <p>Secure handling practices and process controls for sensitive cargo.</p>
+        </div>
+        <div class="card">
+          <h3>Delivery Platforms</h3>
+          <p>Fleet onboarding, operational support, and performance systems for daily execution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights (Zebra-like resources) -->
+  <section class="soft" id="insights">
+    <div class="wrap">
+      <div class="sectionHead">
+        <div>
+          <h2>Insights & resources</h2>
+          <p>Add 3–6 short posts/case highlights to build trust fast (even if simple at first).</p>
+        </div>
+      </div>
+
+      <div class="grid three">
+        <article class="card">
+          <h3>Reducing delivery delays with clearer documentation</h3>
+          <p>How structured paperwork and checkpoints reduce customs and handoff issues.</p>
+          <a class="link" href="#contact">Read →</a>
+        </article>
+        <article class="card">
+          <h3>Scaling rider onboarding without losing quality</h3>
+          <p>Simple workflows that improve activation speed and operational stability.</p>
+          <a class="link" href="#contact">Read →</a>
+        </article>
+        <article class="card">
+          <h3>Warehouse practices that improve throughput</h3>
+          <p>Small operational controls that reduce errors and improve dispatch velocity.</p>
+          <a class="link" href="#contact">Read →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote / Contact CTA -->
+  <section id="quote">
+    <div class="wrap">
+      <div class="cta">
+        <div>
+          <h2>Ready to work with Euro Crown Logistics?</h2>
+          <p>Request a freight quote or discuss fleet/platform operations. We’ll reply quickly with next steps.</p>
+        </div>
+        <div class="row gap wrapline">
+          <a class="btn primary" href="#contact">Contact Sales</a>
+          <a class="btn dark" href="#contact">WhatsApp</a>
+          <a class="btn ghost" href="#contact">Apply as Rider/Driver</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="sectionHead">
+        <div>
+          <h2>Contact</h2>
+          <p>Replace these details with your real phone/email/office addresses.</p>
+        </div>
+      </div>
+
+      <div class="grid two">
+        <div class="card">
+          <h3>Office</h3>
+          <p>
+            Address line 1, City, Country<br/>
+            Phone: +880 1XXX-XXXXXX<br/>
+            Email: info@eurocrownlogistics.com
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Business hours</h3>
+          <p>
+            Mon–Sat: 9:00 AM – 8:00 PM<br/>
+            Emergency support: 24/7
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footGrid">
+      <div>
+        <div class="brand footBrand">
+          <span class="logo" aria-hidden="true"></span>
+          <span class="brandText">Euro Crown Logistics</span>
+        </div>
+        <p class="footText">
+          Freight forwarding, customs clearance, warehousing, and fleet/platform operations — built for reliable execution.
+        </p>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <div class="footLinks">
+          <a href="#solutions">Solutions</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#industries">Industries</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Support</h4>
+        <div class="footLinks">
+          <a href="#quote">Get a Quote</a>
+          <a href="#contact">Contact</a>
+          <a href="#home">Back to top</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <div class="footLinks">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Certifications</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap copyright">
+      © <span id="year"></span> Euro Crown Logistics. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Tabs (hero)
+    const tabBtns = document.querySelectorAll(".tab");
+    const panels = document.querySelectorAll(".tabPanel");
+    tabBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        tabBtns.forEach(b => { b.classList.remove("isActive"); b.setAttribute("aria-selected","false"); });
+        panels.forEach(p => p.classList.remove("isActive"));
+        btn.classList.add("isActive");
+        btn.setAttribute("aria-selected","true");
+        const id = btn.getAttribute("aria-controls");
+        document.getElementById(id).classList.add("isActive");
+      });
+    });
+
+    // Segment filter (solutions)
+    const segBtns = document.querySelectorAll(".seg");
+    const cards = document.querySelectorAll("#solutionGrid .card");
+    segBtns.forEach(b => b.addEventListener("click", () => {
+      segBtns.forEach(x => x.classList.remove("isActive"));
+      b.classList.add("isActive");
+      const f = b.dataset.filter;
+      cards.forEach(c => {
+        const cat = c.dataset.cat;
+        const show = (f === "all") || (cat === f);
+        c.style.display = show ? "block" : "none";
+      });
+    }));
+  </script>
+</body>
+</html>
